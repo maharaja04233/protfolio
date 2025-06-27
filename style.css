@@ -18,8 +18,31 @@
   --border-color: #333;
   --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+.content{
+    font-size: smaller;
+}
 
+.talk {
+  width: 35px;              /* Set width */
+  height: 35px;             /* Set height = width for circle */
+  background-color: #e50914; /* Example background color */
+  border: none;             /* Remove border */
+  border-radius: 50%;       /* Makes it a circle */
+  display: flex;            /* Center icon inside */
+  align-items: center;      /* Center vertically */
+  justify-content: center;  /* Center horizontally */
+  cursor: pointer;          /* Pointer cursor on hover */
+  padding: 0;               /* Remove default padding */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
+}
 
+.talk img {
+  width: 24px;              /* Resize icon if needed */
+  height: 24px;
+}
+.talk:hover {
+  background-color: #b3b3b3;
+}
 
 
 
@@ -512,6 +535,8 @@ section{
     z-index: 1;
 }
 
+
+
 .servicesItem{
     box-shadow: rgba(0,0,0,0.1)0px 1px 3px 0,
                   rgba(0,0,0,0.06)0px 1px 2px 0px;
@@ -521,9 +546,12 @@ section{
     text-align: center;
 }
 
+
+
 .icon-services{
     display: inline-flex;
     position: relative;
+    cursor: pointer;
 }
 
 .icon-services i{
@@ -543,10 +571,13 @@ section{
     z-index: 1;
 }
 
+
+
 .servicesItem:hover i{
     outline: 1px solid var(--main-color);
     transform: scale(1.2);
 }
+
 
 .icon-services span{
     position: absolute;
@@ -1162,7 +1193,7 @@ footer{
         width: 100%;
         text-align: center;
         display: block;
-        background: var(--gradient-white-bg);
+        background: rgb(134, 133, 132);
         left: 0;
         border-top: 2px solid rgba(248, 202, 202, .7);
     }
@@ -1179,7 +1210,7 @@ footer{
         top: 0;
         left: 0;
         position: fixed;
-        background: rgba(0,0,0,0.5);
+        background: rgba(118, 121, 118, 0.5);
         z-index: 8;
         opacity: 0;
         transform: .3s;
@@ -1226,7 +1257,7 @@ footer{
     .btn-box{
         width: 266px;
         margin-bottom: 3rem;
-    }
+    }   
     .about-btn button{
         padding: 10px 15px;
     }

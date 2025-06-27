@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maharaja _/Y\_ || Portfolio website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/686165.png">
     <!-- boxicon css link -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <div class="overlay"></div>
@@ -21,11 +23,19 @@
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="right-header">
+        <div class="right-header" id="allServices">
+
+              <div id="servicesItem">
+            <button class="talk"> <i> <img src="icons/microphone.png "></i> </button>
+              
+             </div>
+            
+            
             <a href="mailto:maharajaraja616@gmail.com"  id="shiny-text" class="btn">Let's chat <i class='bx bx-message-dots'></i></a>
             <div class="menu-icon">
                 <div class="bar"></div>
-            </div>
+            </div>   
+        
         </div>
     </header>
 
@@ -39,7 +49,7 @@
             <p>A passionate full-stack developer who loves turning complex ideas into user-friendly, pixel-perfect interfaces. When I'm not coding, you'll find me exploring the latest web trends or mentoring aspiring developers.</p>
             <div class="btn-box">
                 <a href="mailto:maharajaraja616@gmail.com" class="btn">Hire Me Now! <i class='bx bx-right-arrow-alt'></i></a>
-                <a href="img/resume.pdf" target="_blank" class="btn d-CV">Download CV <i class='bx bx-download'></i></a>
+                <a href="img/resume.pdf" download class="btn d-CV" id="downloadCV">Download CV<i class='bx bx-download'></i></a>
             </div>
             <div class="social-media">
                 <div class="bg-icon">
@@ -220,6 +230,18 @@
             <div class="portfolio-box mix web">
                 <div class="portfolio-content">
                     <div class="portfolio-img">
+                        <img src="img/portfolio/Mini Assistance.png" alt="">
+                    </div>
+                    <h3 style="text-align: center;">Mini-voice Assistance<ata/h3>
+                    <p>I developed a fully html, css, JavaScript library.</p>
+                    <a href="https://voice-assistance-lovat.vercel.app/" target="_blank"class="readMore">Examine! </a>
+                </div>
+                
+            </div>
+
+            <div class="portfolio-box mix web">
+                <div class="portfolio-content">
+                    <div class="portfolio-img">
                         <img src="img/portfolio/E-commerce.png" alt="">
                     </div>
                     <h3 style="text-align: center;">E-commerce Website</h3>
@@ -246,15 +268,27 @@
                     <div class="portfolio-img">
                         <img src="img/portfolio/Chat.png" alt="">
                     </div>
-                    <h3 style="text-align: center;">Quize Game</h3>
+                    <h3 style="text-align: center;">Python Chatapp</h3>
                     <p>I developed a group chat using Python with scoket and flask library.</p>
                     <a href="https://creat-with-group-chat.vercel.app/" target="_blank"class="readMore">Examine! </a>
                 </div>
                 
             </div>
+            
+            
+            
 
-
-           
+           <div class="portfolio-box mix web">
+                <div class="portfolio-content">
+                    <div class="portfolio-img">
+                        <img src="img/portfolio/game.png" alt="">
+                    </div>
+                    <h3 style="text-align: center;">X-O-Game<ata/h3>
+                    <p>I developed a simple html, css, JavaScript library and logical thinking.</p>
+                    <a href="https://game-brown-mu.vercel.app/" target="_blank"class="readMore">Examine! </a>
+                </div>
+                
+            </div>
            
                 
             </div>
@@ -469,27 +503,7 @@
                             </div>
 
 
-                            <div class="skill">
-                                <div class="outer-circle">
-                                    <div class="inner-circle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="120px" height="120px">
-                                            <defs>
-                                                <linearGradient id="GradientColor">
-                                                <stop offset="0%" stop-color="#e91e63" />
-                                                <stop offset="100%" stop-color="#673ab7" />
-                                                </linearGradient>
-                                            </defs>
-                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
-                                       </svg>
-                                       <h2 class="counter">
-                                        <span data-target="45">0</span>%
-                                       </h2>
-                                    </div>
-                                </div>
-                                <div class="sk-title">
-                                    Power Bi
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -506,6 +520,7 @@
             <i class='bx bxs-chevrons-up'></i>
         </span>
     </div>
+    
 
     <!-- EmailJS SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
@@ -518,10 +533,10 @@
     <script src="script.js"></script>
     
     <!-- JavaScript for EmailJS -->
-    <script>
+   <script>
         // Initialize EmailJS with your User ID
         (function () {
-            emailjs.init("R2JbQ8mXmCLA-w_-3"); // Replace with your EmailJS User ID
+            emailjs.init("1HZKy__KkI5drAlgX"); // Replace with your EmailJS User ID
         })();
     
         // Function to send email
@@ -533,7 +548,7 @@
             const formData = new FormData(form);
     
             // Send email using EmailJS
-            emailjs.send("service_pinankq",  {
+            emailjs.send("service_vfufvx8", "service_vfufvx8", {
                 first_name: formData.get("first_name"),
                 last_name: formData.get("last_name"),
                 email: formData.get("email"),
@@ -553,5 +568,7 @@
         // Attach event listener to the form
         document.getElementById("contact-form").addEventListener("submit", sendEmail);
     </script>
+
+
 </body>
 </html>
