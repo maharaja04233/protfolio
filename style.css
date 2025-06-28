@@ -7,6 +7,13 @@
     list-style: none;
     scroll-behavior: smooth;
 }
+ul.navlist {
+  z-index: 9; /* Ensure it's above other content */
+}
+.menu-icon {
+  z-index: 10; /* Above navlist and overlay */
+}
+
 
 :root {
   --bg-color: #141414; /* Netflix dark background */
@@ -76,11 +83,11 @@ header {
 header .logo{
     font-size: 1.7rem;
     font-weight: 700;
-    color: rgb(97, 95, 94);
+    color: rgb(37, 37, 36);
 }
 
 span{
-    background:whitesmoke
+    background:rgb(39, 38, 38)
     background-clip: text;
     
 }
@@ -126,11 +133,11 @@ ul.navlist{
   background-color: var(--hover-color)
 }
 #shiny-text {
-  color: #b5b5b5a4; /* Adjust this color to change intensity/style */
+  color: #969292a4; /* Adjust this color to change intensity/style */
   background: linear-gradient(
     120deg,
-    rgba(255, 255, 255, 0) 40%,
-    rgba(255, 255, 255, 0.8) 50%,
+    rgba(175, 4, 4, 0) 40%,
+    rgba(61, 61, 61, 0.8) 50%,
     var(--main-color)60%
   );
   background-size: 200% 100%;
@@ -176,7 +183,7 @@ ul.navlist{
     width: 100%;
     height: 4px;
     border-radius: 3px;
-    background: #000;
+    background: #c00707;
     margin: 6px 0;
     transition: .4s;
 }
