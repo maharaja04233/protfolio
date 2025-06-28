@@ -257,7 +257,7 @@ function takeCommand(message) {
         speak("Navigating to About Section");
     }
 
-    else if(message.includes("go to skills") || message.includes("my services")) {
+    else if(message.includes("go to skill") || message.includes("my services")) {
         document.getElementById("services").scrollIntoView({ behavior: 'smooth' });
         speak("Navigating to Services Section");
     }
